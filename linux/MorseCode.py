@@ -28,6 +28,7 @@ class MorseCode(object):
                 if self.runBeep.get(let):
                     sleep(0.05)
                     self.runBeep[let]()
+            
             sleep(0.3)
 
     def BeepFromMorseCode(self, string):
@@ -36,4 +37,5 @@ class MorseCode(object):
                 if self.runBeep.get(let):
                     sleep(0.05)
                     self.runBeep[let]()
+            
             sleep(0.3)
