@@ -1,7 +1,7 @@
 # MorseCode
 Morse code encoder &amp; decoder (with beeps)
 
-## Install on
+## Install
 <b> Linux </b>
 ```
 sh install.sh
