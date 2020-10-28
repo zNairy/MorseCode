@@ -22,19 +22,18 @@ class MorseCode(object):
     
     def BeepFromPlainText(self, string):
         string = self.TextEncode(string).strip()
+        
         for word in string.split():
             for let in word:
                 if self.runBeep.get(let):
+                    sleep(0.05)
                     self.runBeep[let]()
-                    sleep(0.1)
+            sleep(0.3)
 
     def BeepFromMorseCode(self, string):
-        try:
-            for word in string.split():
-                for let in word:
-                    if self.runBeep.get(let):
-                        self.runBeep[let]()
-                        sleep(0.1)
-
-        except Exception:
-            print(' Not a morse code\n')
+        for word in string.split():
+            for let in word:
+                if self.runBeep.get(let):
+                    sleep(0.05)
+                    self.runBeep[let]()
+            sleep(0.3)
