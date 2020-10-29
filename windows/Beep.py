@@ -1,7 +1,7 @@
 from winsound import Beep
 
 class Beep(object):
-    ''' sound beeps for morse code class (linux)'''
+    ''' sound beeps for morse code class (windows)'''
     @staticmethod
     def RunTraceBeep():
         Beep(500, 0.4)
