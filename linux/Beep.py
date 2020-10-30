@@ -1,6 +1,6 @@
 from os import system
 
-class Beep(object):
+class MorseBeep(object):
     ''' sound beeps for morse code class (linux)'''
     @staticmethod
     def RunTraceBeep():

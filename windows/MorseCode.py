@@ -1,12 +1,12 @@
 from json import loads
-from Beep import Beep
+from Beep import MorseBeep
 from time import sleep
 
 class MorseCode(object):
     ''' Simple morse encoder and decoder '''
     def __init__(self):
         self.__Alphabet = self.OpenMorseAlphabet()
-        self.runBeep = {'.': Beep.RunDotBeep, '-': Beep.RunTraceBeep}
+        self.runBeep = {'.': MorseBeep.RunDotBeep, '-': MorseBeep.RunTraceBeep}
 
     def OpenMorseAlphabet(self):
         with open('morseAlphabet.json', 'r') as file:
