@@ -12,4 +12,4 @@ python3 -m pip install winsound --user
 ```
 
 ## Demonstration
-![Demo](https://github.com/zNairy/MorseCode/blob/main/gif/gif-demo.gif)
+![Demo](./gif/gif-demo.gif)
